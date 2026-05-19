@@ -1,13 +1,22 @@
-# Hello.py
-print("="*40)
-print("Bienvenue dans mon prmier job Jenkins")
-print("="*40)
+import sys
 
-nom = input("Quel est ton nom?")
-print(f"Bonjour {nom}, ton job Jenkins a reussi !")
+print("=" * 40)
+print("Bienvenue dans mon premier job Jenkins")
+print("=" * 40)
 
-#Petit Calcul 
+if len(sys.argv) > 1:
+    nom = sys.argv[1]
+else:
+    nom = "Etudiant Jenkins"
+
+print(f"Bonjour {nom}, ton job Jenkins a réussi !")
+
 a = 10
 b = 5
+
 print(f"{a} + {b} = {a+b}")
 print(f"{a} - {b} = {a-b}")
+
+assert a + b == 15
+
+print("Tous les tests passent avec succès")
