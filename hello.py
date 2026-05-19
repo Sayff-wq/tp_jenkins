@@ -1,23 +1,13 @@
-# hello.py (version sans input)
-import sys
- 
+# hello.py (version avec input)
 print("=" * 40)
 print("Bienvenue dans mon premier job Jenkins !")
 print("=" * 40)
  
-# On utilise un argument ou une variable par défaut
-if len(sys.argv) > 1:
-   nom = sys.argv[1]
-else:
-   nom = "Étudiant Jenkins"
- 
-print(f"Bonjour {nom}, ton job Jenkins a réussi !")
+nom = input("Quel est votre nom?")
+print(f"Bonjour {nom}, ton job Jenkis a reussis !")
  
 # Petit calcul
 a = 10
 b = 5
 print(f"{a} + {b} = {a + b}")
 print(f"{a} - {b} = {a - b}")
- 
-# Remplacer assert par :
-assert a + b == 100, "❌ Le test a échoué intentionnellement"
