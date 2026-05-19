@@ -9,5 +9,5 @@ print(f"Bonjour {nom}, ton job Jenkins a reussi !")
 #Petit Calcul 
 a = 10
 b = 5
-print(f"{a} + {b} = {a+b"}
+print(f"{a} + {b} = {a+b}"}
 print(f"{a} - {b} = {a-b}"}
